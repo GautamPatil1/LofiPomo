@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lofi Chill</title>
+
+    <!-- LINKING FILES-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body> 
+    <div class="container">
+        
+        <audio id="player" autoplay loop>
+            <source src="http://usa9.fastcast4u.com/proxy/jamz?mp=/1">
+        </audio>
+        
+        
+
+    </div>
+    
+    <h1 class="heading">Stay Chill, Stay Focused.</h1>
+    <br>
+    <br>
+    <h2 class="sub-heading">Pomodoro your way to Success.</h2>
+    <br>
+    <button id="my-clock" onclick="startClock()" class="clock"><span id="status">Session<br></span>
+        <span id="minutes">25</span>:<span id="seconds">0</span>
+    </button>
+    <div class="btns">
+        <p class="feature-heading">SESSION LENGTH</p>
+        <p class="feature-heading">BREAK LENGTH</p>
+    </div>
+    <br>
+    <div class="btns">
+        <div class="centering-buttons" id="session-length-button">
+            <button class="add-subtract-button" id="session-length-sub">-</button>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="minutes-length" id="session-length">25</span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <button class="add-subtract-button" id="session-length-add">+</button>
+        </div>
+    
+       
+        <div class="centering-buttons" id="break-length-button">
+            <button class="add-subtract-button" id="break-length-sub">-</button>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="minutes-length" id="break-length">5</span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <button class="add-subtract-button" id="break-length-add">+</button>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        
+        <center>
+            <button onclick="togglePlay()"><i id="icon" class="fa-solid fa-circle-play fa-5x"></i></button>
+        </center>
+    </div>
+
+<script src="{% static 'js/app.js' %}"></script>
+<script src="https://kit.fontawesome.com/b53972c862.js" crossorigin="anonymous"></script>
+<script>
+    function changeGif() {
+        var gifs = ['gifs/2.gif', 'gifs/3.gif', 'gifs/4.gif', 'gifs/5.gif', 'gifs/6.gif', 'gifs/7.gif']
+        var body = document.body;
+        var gif = gifs[Math.floor(Math.random() * gifs.length)];
+        document.body.style.backgroundImage = "url('static/" + gif + "')";
+        console.log('changed');
+    }
+    
+    window.onload = function() {
+        console.log("loaded");
+        changeGif();
+        setInterval(changeGif, 30000);
+    }
+</script>
+</body>
+</html>
