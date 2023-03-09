@@ -68,7 +68,7 @@
         var gifs = ['gifs/2.gif', 'gifs/3.gif', 'gifs/4.gif', 'gifs/5.gif', 'gifs/6.gif', 'gifs/7.gif']
         var body = document.body;
         var gif = gifs[Math.floor(Math.random() * gifs.length)];
-        document.body.style.backgroundImage = "url('static/" + gif + "')";
+        body.style = "background: url('static/" + gif + "'); background-size: cover; background-repeat: no-repeat; background-position: center center; background-attachment: fixed;";
         console.log('changed');
     }
     
@@ -77,6 +77,8 @@
         changeGif();
         setInterval(changeGif, 30000);
     }
+
+    {% comment %} var gifs = ['https://i.giphy.com/media/RgZFvGuI4OxLjuSvRF/giphy.webp', 'https://i.giphy.com/media/RMwgs5kZqkRyhF24KK/giphy.webp', 'https://media.tenor.com/DGre44yRPfMAAAAC/rain.gif', 'https://i.giphy.com/media/k81NasbqkKA5HSyJxN/giphy.webp', 'https://media.tenor.com/jzZkdfuKcMAAAAAM/cat-kiss.gif', 'https://media.tenor.com/wd-bwTR2G3sAAAAd/rainy-rooftop.gif', 'https://i.giphy.com/media/k5zu35npVsYfgZQwwl/giphy.webp'] {% endcomment %}
 </script>
 </body>
 </html>
