@@ -1,6 +1,6 @@
 
   <h1>LofiPomo: A Lofi Radio and Pomodoro Timer Web App</h1>
-  <h2> <a href="https://lofipomo.xodeni3940.repl.co/">Live Demo</a></h2>
+  <h2> <a href="https://lofipomo.gautampatil11.repl.co/">Live Demo</a></h2>
   <p>LofiPomo is a web application that streams Lofi songs 24/7 and has a Pomodoro timer built in. With this app, you can enjoy a relaxing Lofi playlist while boosting your productivity with the Pomodoro technique.</p>
   <h2>Features</h2>
   <ul>
@@ -27,7 +27,7 @@ The Pomodoro timer is implemented using JavaScript and Vue.js. Vue.js is a popul
     <li>Cloud platform for deployment</li>
   </ul>
   <h2>Usage</h2>
-  <p>To use LofiPomo, simply visit the website at <a href="https://lofipomo.xodeni3940.repl.co/">https://lofipomo.xodeni3940.repl.co/</a>. You can start the Pomodoro timer by clicking on the "Start" button, and adjust the work and break periods as needed. You can also adjust the volume of the Lofi stream using the volume slider.</p>
+  <p>To use LofiPomo, simply visit the website at <a href="https://lofipomo.gautampatil11.repl.co/">https://lofipomo.gautampatil11.repl.co/</a>. You can start the Pomodoro timer by clicking on the "Start" button, and adjust the work and break periods as needed. You can also adjust the volume of the Lofi stream using the volume slider.</p>
   <h2>Contributing</h2>
   <p>If you would like to contribute to LofiPomo, feel free to fork the repository on GitHub and submit a pull request with your changes.</p>
 
