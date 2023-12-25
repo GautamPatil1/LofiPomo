@@ -78,6 +78,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'lofi.wsgi.application'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_URL = '/static/'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
